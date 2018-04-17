@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab05</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="all" class="container-fluid mx-center" style="width:80%">
+    <div id="myTabContent" class="tab-content">
+    <div class="tab-pane in active" id="gallery">
+            <div class="row">
+                <div class="foat-left col-sm-4">
+                    <h1>Share Your Travels</h1>
+                    <p>let us know where you've been</p>
+                </div>
+                <nav class="navbar navbar-expand-sm col-sm-8">
+                    <ul class="navbar-nav">
+                        <div class="row">
+                            <li class="nav-item col-sm-3">
+                                <a class="nav-link text-dark " href="#upload" data-toggle="tab">Uploed</a>
+                            </li>
+                            <li class="nav-item col-sm-6">
+                                <a class="nav-link text-dark" href="#">Ralated Photos</a>
+                            </li>
+                            <li class="nav-item col-sm-3">
+                                <a class="nav-link text-dark" href="#">Review</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="border col-sm-9">
+                    <h3>New York Central Park</h3>
+                    <p>Consevatory Pond in Central Park</p>
+                    <a href="images/central-park.jpg"><img src="images/central-park.jpg" width=100%></a>
+                    <p>This photo of Conservatory Pond in <a href="#">Central Park</a> in <a href="#">New Your City</a> was taken on October 22,2016 with a Canon Eos 30D camera.</p>
+                    <div class="btn-group float-right">
+                        <button type="button" class="btn btn-primary btn-light"><img src="images/icon_download.png"></button>
+                        <button type="button" class="btn btn-primary btn-light"><img src="images/icon_mail.png"></button>
+                        <button type="button" class="btn btn-primary btn-light"><img src="images/icon_map.png"></button>
+                        <button type="button" class="btn btn-primary btn-light"><img src="images/icon_up.png"></button>
+                        <button type="button" class="btn btn-primary btn-light"><img src="images/icon_down.png"></button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                        <div class="border center-block">
+                            <h3 class="text-center">Related Photos</h3>
+                            <div id="demo" class="carousel slide" data-ride="carousel">
+                                <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                </ul>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active card" style="width:100%">
+                                        <div class="text-center">
+                                            <a href="images/related-square1.jpg"> <img class="card-img-bottom" src="images/related-square1.jpg" style="width:90%"> </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item card" style="width:100%">
+                                        <div class="text-center">
+                                            <a href="images/related-square2.jpg"> <img class="card-img-bottom" src="images/related-square2.jpg" style="width:90%"> </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item card" style="width:100%">
+                                        <div class="text-center">
+                                            <a href="images/related-square3.jpg"> <img class="card-img-bottom" src="images/related-square3.jpg" style="width:90%"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="border">
+                            <div class="text-dark">
+                            <button type="button" class="btn btn-link"><h3 class="text-dark">Reviews</h3></button>
+                            </div>
+                            <a href="#demo2" class="text-dark text-center mx-auto" data-toggle="collapse">
+                                <i>
+                                    <p class="text-center">Ricardo<br><span class="badge badge-pill badge-primary">2016-05-23</span></p>
+                                </i>
+                            </a>
+                            <div id="demo2" class="collapse"><p class="text-center">Easy on the HDR buddy.</p></div><hr>
+                            <a href="#demo3" class="text-dark text-center" data-toggle="collapse">
+                                <i>
+                                    <p class="text-center">Susan<br><span class="badge badge-pill badge-primary">2016-11-18</span></p>
+                                </i>
+                            </a>
+                            <div id="demo3" class="collapse"><p class="text-center">I love Central Park.</p></div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><div class="text-center" style="width:150px"><a href="#">Home</a></div></div>
+                <div class="col-sm-4"><div class="text-center" style="width:150px"><a href="#">Browse</a></div></div>
+                <div class="col-sm-4"><div class="text-center" style="width:150px"><a href="#">Search</a></div></div>
+            </div>
+            <i><p class="text-center">Copyright &copy; 2017 Share Your Travels</p></i>
+    </div>
+    <div class="tab-pane" id="upload">
+        <div class="row">
+            <div class="foat-left col-sm-4">
+                <h1>Share Your Travels</h1>
+                <p>let us know where you've been</p>
+            </div>
+            <nav class="navbar navbar-expand-sm col-sm-8">
+                <ul class="navbar-nav">
+                    <div class="row">
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link text-dark " href="#gallery" data-toggle="tab">Gallery</a>
+                        </li>
+                        <li class="nav-item col-sm-6">
+                            <a class="nav-link text-dark" href="#">Feeling Lucky</a>
+                        </li>
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link text-dark" href="#">User</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div class="border">
+            <form>
+                <fieldset>
+                    <legend>PHOTO DETAILS</legend>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" class="form-control" placeholder="Give your photo a descriptive name">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" class="form-control" rows=3 placeholder="Adding a rich description will help with search results"></textarea>
+                    </div>
+                    <div class="form-group">
+                    <label for="continent">Continent</label>
+                    <select id="continent" class="form-control">
+                        <option>Choose continent</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" class="form-control">
+                        <option>Choose country</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label>Copyright?</label>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">All rights reserved</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked>Creative</label>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label>Creative Comments Types</label><br>
+                    <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Attribution
+                    </label>
+                   </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Noncommercial
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" >No Derivative Works
+                        </label>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">I accept the software license
+                        </label>
+                    </div>
+                    </div>
+                </fieldset>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label>Rate this photo:</label>
+                    <input type="text"class="form-control">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>Color collection:</label>
+                    <input type="text"class="form-control">
+                </div>
+            </div>
+            <iv class="row">
+                <div class="form-group col-sm-6">
+                    <label>Date Taken:</label>
+                    <input type="text"class="form-control">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>Time Taken</label>
+                    <input type="text"class="form-control">
+                </div>
+            </iv>
+                <button type="submit" class="btn btn-dark">Submit</button><button type="reset" class="btn btn-dark">Clear</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
