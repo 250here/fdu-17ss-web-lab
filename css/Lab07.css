@@ -1,0 +1,27 @@
+body{
+	text-align:center;
+}
+select,button{
+	width:300px;
+	padding:0.5em;
+	margin:2px;
+}
+input{
+	width:180px;
+	padding:0.5em;
+	margin:2px;
+}
+#button1{
+	display:none;
+}
+table{
+	margin:0 auto; 
+	text-align:center;
+}
+th {
+    background-color: grey;
+    color: whitesmoke;
+	}
+tr:nth-child(odd) td {
+   background-color: lightgrey;
+}
