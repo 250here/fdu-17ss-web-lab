@@ -124,11 +124,23 @@ check1whencreate:function(){
 	if((!tableName=="")&&(number>0)){
 		underdiv1.innerHTML="";
 		for(let i=0;i<number;i++){
-			underdiv1.innerHTML=underdiv1.innerHTML+"<input id=attribute"+i+" type='text' name='attribute'  placeholder='Attribute'>";
+			underdiv1.innerHTML=underdiv1.innerHTML+"<input id=attribute"+i+" type='text' name='attribute' class='mark' placeholder='Attribute' onchange='FUNCTIONSFORCHANGE.check2whencreate()'>";
 		}
-		button1.style.display="inline";
 	}else{
 		underdiv1.innerHTML="";
+	}
+},
+check2whencreate:function(){
+	let b=true;
+	let s=document.getElementsByClassName("mark");
+	for(let i=0;i<s.length;i++){
+		if(s[i].value===""){
+			b=false;
+		}
+	}
+	if(b){
+		button1.style.display="inline";
+	}else{
 	    button1.style.display="none";
 	}
 }
